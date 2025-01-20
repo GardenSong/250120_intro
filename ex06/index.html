@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        /* 이렇게 전체에다가 0을 해서 아무것도 전체에 들어있지 않다는 것을 전제하고 한다. */
+      }
+      .box {
+        background-color: cyan;
+        /* content */
+        width: 200px;
+        height: 200px;
+        /* padding */
+        padding: 20px;
+        /* contet는 외부고 padding 은 내부 */
+        /* border */
+        border: 1px solid black;
+        /* margin */
+        margin: 20px;
+        /* margin은 합쳐지는데 padding은 아님 */
+      }
+      #box1 {
+        margin-bottom: 40px;
+      }
+      /* 위에는 40 아래는 60 인대 결국 60만 살아남게 된다. 이걸 마진 병합이라고 한다. */
+      #box2 {
+        margin-bottom: 60px;
+      }
+      /* padding을 쓰세요 padding으로 아늑하게 감싸야 두개가 합쳐지지 않습니다. */
+    </style>
+  </head>
+  <body>
+    <!-- div.box -->
+    <div class="box">첫번째 박스</div>
+    <div class="box">두번째 박스</div>
+  </body>
+</html>

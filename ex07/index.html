@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*  div는 앞에서 보았던 * 별이랑 같을까? */
+      div {
+        /* div는 컨테이너 개념이라 그냥 답는 것이라고 생각하면 된다. 이 div 안에서  */
+        width: 100px;
+        height: 100px;
+        border: 1px solid red;
+        padding: 10px;
+        /* 보면은 패딩도 같이 들어가서 크기가 그렇게 되어 있다.. */
+      }
+      #box1 {
+        /* default -> border? pading? 포함하지 않아.*/
+        box-sizing: content-box;
+      }
+      #box2 {
+        /* default -> border? pading? 포함하는 옵션도 있어*/
+        box-sizing: border-box;
+      }
+      /* 디스플레어 와 오버플로우는 따로 한번 예시로 해서 실행을 해보시면 감이 오실 겁니다. */
+    </style>
+  </head>
+  <body>
+    <!-- div#box1+div#box2 -->
+    <div id="box1"></div>
+    <div id="box2"></div>
+  </body>
+</html>
+<!-- border padding -> 보더 패딩 포함 옵션
+content-box -> 보더 패딩 안 포함 -->

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      li{
+        color: brown;
+      }
+
+      .한식{
+         text-decoration: underline;
+         /* 위 아래가 경헙하면 클래스 선택자(.한식)가 이깁니다. */
+         color: aqua;
+      }
+/* 이제는 한식보다 다이어트 가 이깁니다. 같은 상황이면 뒤에 오는게 우선순위입니다. */
+      .diet{
+        font-size: 30pt;
+        color: blueviolet;
+      }
+      
+      /* 정말 중요한 클래스는 # 이라는 키호를 씁니다. */
+      #special1{
+        background-color: yellow;
+        color: crimson;
+        /* id랑 요소랑 경합하면 id가 이깁니다. */
+      }
+      #special2{
+        background-color: yellow;
+        color: crimson;
+        /* id랑 요소랑 경합하면 id가 이깁니다. */
+      }
+      /* 아래는 모든 것에 적용되는 * 별표 입니다. body 라고 대체해도 괜찮고 박스 모델 처럼 생각해도 좋습니다*/
+      * {
+        /* 모든 요소가 꼭 가운데 정렬이 되어야하는 상황에 쓰기 좋겠죠? */
+        text-align: center;
+        /* 결합자 명시도는 따로 공부하세요. 지금 배운 것 만으로 다 짤 수 있어요. 특정 상황에서 내 맘대로 하고 싶어. 
+        한 부분은 내 맘대로 하고 싶어 할때만 결합자, 명시도 가 쓰여서 굳이?  */
+      }
+
+
+      
+    </style>
+  </head>
+    <!-- 선택자 -->
+    <!-- 우리는 엘리먼트 선택자를 것을 배웠은 직접적으로 테그 하나를 선택해서 요소를 넣는 것 -->
+    <!-- 가장 많이 쓴느 것은  클래스 선택자-->
+    <body>
+      <ul>
+        <li id="special1">햄버거</li>
+        <!-- class는 데이터 부분에 스페이스가 들어가면 안됩니다. -->
+        <li id="special2" class="한식 diet">김밥</li>
+        <li class="한식">컵밥</li>
+        <li class="한식">칼국수</li>
+        <li>돈까스</li>
+        <li class="한식">순두부알탕</li>
+        <li>카레</li>
+        <li class="diet">샌드위치</li>
+        <li>짬뽕</li>
+        <li>계란볶음밥</li>
+        <li class="diet">샐러드</li>
+        <li class="한식">된장찌개</li>
+        <li class="한식">제육</li>
+        <li class="diet">닭가슴살</li>
+      </ul>
+    </body>
+  </body>
+</html>
