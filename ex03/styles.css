@@ -1,0 +1,11 @@
+li {
+  color: orange;
+  font-size: 15px;
+}
+ol li {
+  color: green;
+}
+ol li {
+  /* css 컨트롤 + / 슬래시 하며는 주석이 생성됨 */
+  color: blue;
+}

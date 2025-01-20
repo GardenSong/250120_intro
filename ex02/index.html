@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      li {
+        color: orange;
+        font-size: 15px;
+      }
+
+      ol li {
+        color: green;
+      }
+      ol li {
+        color: blue;
+      }
+      /* 앞에 초록이라도 뒤에 블루 로 다시 쓰여져 있다면 덮어진다.결론은 파랑이 된다. */
+    </style>
+  </head>
+  <body>
+    <!-- ul>1l{점심식사}*3 -->
+    <!-- ul>1l{점심식사}*3^ol>li{저녁식사}*3+p{디저트} 여기서 중괄호는 데이터 넣는다. 긜고+ 플러스는 옆에 나란히 두는 것 -->
+    <ul>
+      <li>점심식사</li>
+      <li>점심식사</li>
+      <li>점심식사</li>
+    </ul>
+    <ol>
+      <li>저녁식사</li>
+      <li>저녁식사</li>
+      <li>저녁식사</li>
+      <p>디저트</p>
+      <!-- p태그는 혼자 놀아 -->
+    </ol>
+  </body>
+</html>
